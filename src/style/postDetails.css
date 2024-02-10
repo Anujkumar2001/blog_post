@@ -1,0 +1,71 @@
+.userDetailsContainer {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  padding-bottom: 50px;
+  flex-direction: column;
+  gap: 20px 0;
+}
+.userDetails {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.userDetails img {
+  max-height: 500px;
+  object-fit: cover;
+}
+.aboutPostDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.aboutPostDetails h3 {
+  background-color: rgba(0, 0, 0, 0.168);
+  padding: 6px 0;
+  text-align: center;
+}
+.aboutPostDetails p {
+ line-height:22px;
+ margin-top: 20px;
+}
+.commentContainer {
+  border: 1px solid rgba(0, 0, 0, 0.197);
+  padding: 20px;
+  border-radius: 20px;
+}
+.comment {
+  padding: 10px 5px;
+  max-width: 500px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.285);
+  outline: none;
+  font-size: 15px;
+}
+
+.commentContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px 0;
+  margin-top: 20px;
+}
+
+/* media query */
+
+@media (max-width: 405px) {
+  .userDetailsContainer {
+    width: 80%;
+  }
+}
+
+@media (max-width:753px) {
+  .createCommentBtn{
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,14 @@
+.editPostThumbnail {
+  width: 80%;
+ max-height:300px;
+  overflow: hidden;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.editPostThumbnail img {
+  width: 100%;
+}

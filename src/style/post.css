@@ -1,0 +1,81 @@
+.postMainContainer {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.postContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  border-radius: 10px;
+}
+
+#editBtn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.postContainer img {
+  width: 300px;
+  height: 180px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.postDetails {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+
+.postTitle {
+  font-size: 22px;
+  width: 80%;
+  text-align: center;
+}
+.postDetails .uploadTime {
+  font-size: 16px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+/* media query part ---- */
+
+@media (max-width: 1640px) {
+  .postContainer {
+    flex-direction: column-reverse;
+    gap: 20px 0;
+  }
+}
+@media (max-width: 916px) {
+  .postMainContainer {
+    width: 80%;
+  }
+  .postDetails {
+    width: 400px;
+  }
+}
+
+@media (max-width: 544px) {
+  .postMainContainer {
+    width: 100%;
+  }
+}

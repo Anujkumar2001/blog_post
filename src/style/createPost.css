@@ -1,0 +1,72 @@
+.createPostContainer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.createPostContent {
+  display: flex;
+  width: 80%;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding: 40px;
+  margin: 20px 0;
+}
+.inputSpan {
+  width: 100%;
+}
+.postTextArea {
+  resize: none;
+  width: 100%;
+}
+.postTextArea textarea {
+  min-height: 100px;
+  padding: 5px;
+  outline: none;
+}
+.createPostContainer input {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 2px;
+  width: 100%;
+}
+.postTextArea {
+  display: flex;
+  flex-direction: column;
+}
+
+#catogery {
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.createPostBtn {
+  display: flex;
+  align-items: center;
+}
+
+/* media query----- */
+
+@media (max-width: 748px) {
+  .createPostContent {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .createPostContainer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 533px) {
+  .postTextArea textarea {
+    resize: none;
+    width: 100%;
+  }
+}

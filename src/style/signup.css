@@ -1,0 +1,31 @@
+.signupContainer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+.signupForm {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 20px 30px 30px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.signupForm input {
+  min-width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.signUpBtn{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

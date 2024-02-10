@@ -1,0 +1,104 @@
+.navbarContainer {
+  background-color: rgb(214, 27, 27);
+  padding: 10px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+  margin-bottom: 100px;
+  top: 0;
+  left: 0;
+  border-bottom: 2px solid white;
+  z-index: 100;
+}
+.desktopNavbar {
+  display: flex;
+}
+.desktopNavbar ul {
+  display: flex;
+  gap: 20px;
+  text-decoration: none;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+.desktopNavbar ul li {
+  font-size: 20px;
+}
+
+.desktopNavbar a {
+padding: 5px 10px;
+  color: white;
+  border-radius: 4px;
+  transition: 0.5s;
+  min-width: 100px;
+}
+
+.desktopNavbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+.profileIcon {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* mobile view navbar --- */
+.mobileNavbar {
+  display: none;
+  transition: all 0,3s ease-in;
+}
+.mobileNavbar ul {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+  background-color: rgb(214, 27, 27);
+  margin-top: 6px;
+  transition: all 1s ease-in;
+}
+.threeOutline {
+  font-size: 2.9rem;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.threeOutline:active{
+  .mobileNavbar{
+    display: block;
+  }
+}
+.mobileNavbar a,
+li {
+  color: white;
+  font-size: 1.2rem;
+}
+.mobileNavbar li {
+  padding: 2px 0;
+}
+
+.mobileNavbar li:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.359);
+  cursor: pointer;
+}
+
+@media (max-width: 706px) {
+  .desktopNavbar {
+    display: none;
+  }
+  .navbarContainer {
+    background-color: none;
+    padding: 5px 0;
+  }
+  .mobileNavbar {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+}

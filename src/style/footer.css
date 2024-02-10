@@ -1,0 +1,17 @@
+.footerContainer {
+  background-color: rgba(0, 0, 0, 0.791);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+}
+footer{
+    margin-top: auto;
+}
+.footerContainer p{
+    color: white;
+    font-size: 16px;
+    opacity: 0.8;
+    text-align: center;
+    font-weight: 400;
+}

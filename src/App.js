@@ -1,23 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import { AfterLogin, AfterLogut } from "./Protect/Protect";
+import Logout from "./component/Logout";
+import Navbar from "./component/Navbar";
+import CreatePost from "./pages/CreatePost";
+import EditPost from "./pages/EditPost";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Otp from "./pages/Otp";
+import Post from "./pages/Post";
+import PostDetails from "./pages/PostDetails";
+import Signup from "./pages/Signup";
+import { useParams } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+} from "react-router-dom";
+import Profile from "./pages/Profile";
+import Footer from "./component/Footer";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <div style={{minHeight:'78.9vh'}}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/signup" element={<Signup />} />
+          <Route path={`/post-details/:id`} element={<PostDetails />} />
+          <Route path="/create-post" element={<CreatePost />} />
+          <Route path="/otp" element={<Otp />} />
+          <Route path="/post" element={<Post />} />
+          <Route path={`/post/edit-post/:id`} element={<EditPost />} />
+          <Route path="/profile" element={<Profile />} />
+        </Routes>
+      </div>
+      <Footer />
     </div>
   );
 }

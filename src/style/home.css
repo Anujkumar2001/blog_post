@@ -1,0 +1,139 @@
+.homeContainer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px 0;
+  padding: 0 20px 50px 0;
+}
+
+/* search box -------------*/
+.serachBox {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 50px;
+  border: 1px solid #454545;
+  padding: 5px 20px;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.serachBox input {
+  padding: 8px 5px;
+  width: 90%;
+  font-size: 1.1rem;
+  outline: none;
+  border: none;
+}
+.searchIcon {
+  background-color: rgba(158, 140, 140, 0.205);
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 11px;
+  cursor: pointer;
+  border-left: 1px solid #454545;
+}
+.allPostsContainer {
+  border: 1px solid rgba(0, 0, 0, 0.177);
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0 0;
+  align-items: center;
+}
+
+.allPostsContainer img {
+  width: 300px;
+  /* min-width: 100px; */
+  height: 180px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.homePostDetails {
+  display: flex;
+  width: 250px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 40px;
+}
+.homePostDetails h4 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.category {
+  opacity: 0.8;
+}
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.677);
+}
+
+.homeContainer {
+  .loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border-color: #054a01 #113504 transparent transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+}
+/* medida query---------- */
+
+@media (max-width: 1326px) {
+  .allPostsContainer {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+  }
+  .homePostDetails {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .allPostsContainer a {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    object-fit: contain;
+  }
+  .allPostsContainer img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .serachBox {
+    width: 80%;
+  }
+}
+
+@media (max-width: 460px) {
+  .homeContainer {
+    width: 100%;
+  }
+  .allPostsContainer {
+    width: 80%;
+  }
+  .serachBox input {
+    width: 80%;
+  }
+}
+
+@media (max-width: 351px) {
+  .homeContainer {
+    width: 100%;
+    padding: 0;
+  }
+  .allPostsContainer {
+    width: 100%;
+  }
+}
