@@ -19,6 +19,8 @@ function CreateComment({ children, ...props }) {
 
   const handleClick = () => {
     if (commentPost.comment.length > 0) {
+ props.setCommentInput("")
+ console.log(props.commentInput,"comment input data")
       axios
         .post(commentbase_url, commentPost, {
           headers: {
@@ -26,7 +28,7 @@ function CreateComment({ children, ...props }) {
           },
         })
         .then((res) => {
-          console.log(res);
+
           setDemo(demo + 1);
           if (res.status == 201) {
             props.fetchComment();

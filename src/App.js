@@ -2,6 +2,7 @@ import "./App.css";
 import { AfterLogin, AfterLogut } from "./Protect/Protect";
 import Logout from "./component/Logout";
 import Navbar from "./component/Navbar";
+import "./output.css"
 import CreatePost from "./pages/CreatePost";
 import EditPost from "./pages/EditPost";
 import Home from "./pages/Home";

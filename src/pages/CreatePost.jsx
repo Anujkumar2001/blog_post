@@ -152,7 +152,7 @@ function CreatePost() {
         />
         <span className="createPostBtn">
           <button className="button-3">
-            Create-post {loader && "loading..."}
+          {loader?  "loading...":"Create-post"}
           </button>
         </span>
       </form>

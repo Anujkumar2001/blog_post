@@ -47,7 +47,7 @@ function PostDetails() {
       <div className="userDetails">
         <img src={thumbnail} alt="" />
         <div className="aboutPostDetails">
-          <h3>{title}</h3>
+          <h3 style={{fontSize:"20px",fontWeight:"bold"}}>{title}</h3>
           <p>{post}</p>
         </div>
       </div>
